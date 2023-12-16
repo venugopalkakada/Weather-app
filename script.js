@@ -21,11 +21,11 @@ fetch(url, {
         return response.json();
     })
     .then(result => {
-        console.log(result)
+        console.log(result);
         document.querySelector(".temp").innerHTML = result.temp + "°C"; 
         document.querySelector(".humidity").innerHTML = result.humidity + "%"; 
         document.querySelector(".wind").innerHTML = result.wind_speed + "km/h"; 
-        document.querySelector(".city").innerHTML = city;
+        document.querySelector(".city").innerHTML = city; 
 
             // Log or use the variables as needed
             console.log('Temperature:', result.temp);
