@@ -4,39 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
 ,initial-scale=1.0">
-    <title>Document</title>
+    <title>Weatherapp</title>
     <link rel="stylesheet" href="Weatherdesign.css">
 </head>
 <body>
-<div class="card">
-   <div class="search">
-        <input id="searchBar" placeholder="city"><button>search</button>
-   </div>
-   <div class="weather">
-        <img src="rain.jpg" class="weathericon">
-        <h1 class="temp">°C</h1>
-        <h2 class="city">city</h2>
-            <div class="details">
-                <div class="col">
-                    <img src="humidity.png">
-                        <div> 
-                            <p class="humidity">%</p>
-                            <p>humidity</p>
-                        </div>        
-            </div>
-                <div class="col">
-                    <img src="wind.png">
-                        <div> 
-                            <p class="wind">kmph</p>
-                            <p>wind</p>
+<div class="container">
+    <div class="card">
+        <div class="search">
+                <input id="searchBar" placeholder="city"><button>search</button>
+        </div>
+        <div class="weather">
+                    <img src="" class="weathericon">
+                    <h1 class="temp">°C</h1>
+                    <h2 class="city">city</h2>
+                        <div class="details">
+                            <div class="col">
+                                <img src="nami.png">
+                                    <div> 
+                                        <p class="humidity">%</p>
+                                        <p>humidity</p>
+                                    </div>        
+                            </div>
+                            <div class="col">
+                                <img src="hawa.png">
+                                    <div> 
+                                        <p class="wind">kmph</p>
+                                        <p>wind</p>
+                                    </div>
+                            </div>
                         </div>
-                    
-            
-                </div>
-            </div>
+    </div>    
+</div>
+<div class="tempCard">
+    <h2>Temperature details</h2>
+        <div class="temp_details">
+            <h4 class="min_temp">°C</h4>
+            <h4 class="max_temp">°C</h4>
+            <h4 class="feels_like">°C</h4> 
+        </div>    
+</div>
+<div class="windCard">
+    <h3>Wind Details</h3>
+    <div class="wind">
+        <h4 class="deg">°</h4>
+        <h4 class="speed">kmph</h4>  
+    </div>
+</div> 
+    <div class="humidityCard">
+        <h3>Humidity Details</h3>
+        <div class="humid">
+            <h4 class="humid1">Humidity: </h4>
+            <h4 class="pressure">Pressure: </h4>  
+         </div> 
    </div>
-
-        
+   <div class="coord">
+    <h3>Coordinates</h3>
+    <div class="long_lati">
+        <h4 class="long">Longitude:</h4>
+        <h4 class="lati">Latitude:</h4>  
+     </div> 
+</div>
+<div class="date_time">
+    <!-- <div class="date_time"> -->
+        <h4 class="date">DD/MM/YYYY</h4>
+        <h4 class="time">HR:MIN</h4>  
+     
 </div>
 <script src="script.js"></script>
 </body>
